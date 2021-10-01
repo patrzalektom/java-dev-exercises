@@ -1,7 +1,6 @@
 package tom.patrzalek.javadevex3;
 
 import com.stripe.Stripe;
-import com.stripe.exception.StripeException;
 import com.stripe.model.Price;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
