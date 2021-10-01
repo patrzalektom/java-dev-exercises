@@ -1,0 +1,20 @@
+server:
+  port: 8889
+
+spring:
+  datasource:
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/stripedb?createDatabaseIfNotExist=true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    mapper:
+      propagate-transient-marker: true
+
+stripe:
+  secret: "sk_test_51JeHvVAAdRN7k1p6dnQdJjTpFMggwqditubELT5hHXuOZugPqTLFLlcVHjKIYmg2ZgrJMkwuIlYC8fcKU97ZxrhG004e2sMrCM"
+  publishable: "pk_test_51JeHvVAAdRN7k1p6N3IleztWmG9TmPWF46NpWEZZYFsb0IjmxtUzufrNvQSu1sDmw6ZSrD4p8vPW6fEpMG3X9tip00BHHVPnqG"
